@@ -1,4 +1,4 @@
-
+ 
 package accesoDatos;
 
 import java.sql.Connection;
@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 
 
 public class Conexion {
-    private static String url="jdbc:mysql://localhost/uni";
-    private static String usuario="root";
-    private static String password="";
+    private static final String url="jdbc:mariadb://localhost/universidad";
+    private static final String usuario="root";
+    private static final String password="";
 
    
     private static Conexion conexion=null;

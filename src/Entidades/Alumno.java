@@ -11,6 +11,9 @@ public class Alumno {
     private String nombre;
     private LocalDate fechaNacimiento;
     private boolean estado;
+    
+     public Alumno() {
+     }
 
     
 
