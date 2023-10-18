@@ -12,7 +12,7 @@ public class Proyectoprueba {
    
     public static void main(String[] args) {
        
-//        
+////        
 //       Alumno carlos = new Alumno(14,40500505, "Carlos", "Lopez", LocalDate.of(1999, 5, 2), true);
 //       AlumnoData alu = new AlumnoData();
 //        alu.guardaralumno(carlos);
