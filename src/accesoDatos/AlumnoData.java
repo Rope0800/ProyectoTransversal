@@ -43,7 +43,7 @@ public class AlumnoData {
          
         
      } catch (SQLException e) {
-         JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
+         JOptionPane.showMessageDialog(null, "ERROR AL Guardar ALUMNO");
      }
 
  }
@@ -64,7 +64,7 @@ public class AlumnoData {
             }
             ps.close();
         } catch (SQLException ex) {
-          JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
+          JOptionPane.showMessageDialog(null, "ERROR AL modificar LA TABLA ALUMNO");
         }
  
 }
@@ -79,7 +79,7 @@ public class AlumnoData {
             } 
             ps.close();
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
+            JOptionPane.showMessageDialog(null, "ERROR AL eliminar A LA TABLA ALUMNO");
         }
      
  }
@@ -105,7 +105,7 @@ public class AlumnoData {
             }
             ps.close();
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
+            JOptionPane.showMessageDialog(null, "ERROR AL buscar el ALUMNO");
         }
         return alumno;
  }
@@ -130,7 +130,7 @@ public class AlumnoData {
             }
             ps.close();
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
+            JOptionPane.showMessageDialog(null, "ERROR AL buscar por dni ");
         }
         return alumno;
  }
@@ -153,7 +153,7 @@ public class AlumnoData {
             }
             ps.close();
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
+            JOptionPane.showMessageDialog(null, "ERROR AL listar ALUMNO");
         }
         return alumnos;
  }

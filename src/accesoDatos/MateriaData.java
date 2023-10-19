@@ -38,7 +38,7 @@ public class MateriaData {
             ps.close();
             
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA MATERIA");
+            JOptionPane.showMessageDialog(null, "ERROR AL guardar MATERIA");
         }
         
     }
@@ -65,7 +65,7 @@ public class MateriaData {
             ps.close();
             
         } catch(SQLException sqx){
-            JOptionPane.showMessageDialog(null, "ERROR AL ACCEDAR A LA TABLA MATERIA");
+            JOptionPane.showMessageDialog(null, "ERROR AL modificar MATERIA");
             
         }
     }
@@ -90,7 +90,7 @@ public class MateriaData {
             
             
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "ERROR AL INGRESAR A LA TABLA");
+            JOptionPane.showMessageDialog(null, "ERROR AL eliminar materia");
         }
     }
     
@@ -119,7 +119,7 @@ public class MateriaData {
             
             
         } catch (SQLException e) {
-            JOptionPane.showInputDialog("ERROR AL ACCEDER A LA TABLA MATERIA");
+            JOptionPane.showMessageDialog(null, "ERROR AL BUSCAR MATERIA");
         }
          return materia;
     }
@@ -146,7 +146,7 @@ public class MateriaData {
             }
             ps.close();
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null,"ERROR AL ACCESER A LA TABLA MATERIA");
+            JOptionPane.showMessageDialog(null,"ERROR AL listar MATERIA");
         }
          return mate;
     }

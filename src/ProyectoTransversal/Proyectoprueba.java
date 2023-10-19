@@ -3,7 +3,9 @@ package ProyectoTransversal;
 
 import Entidades.Alumno;
 import Entidades.Materias;
+import Entidades.*;
 import accesoDatos.AlumnoData;
+import accesoDatos.InscripcionData;
 import accesoDatos.MateriaData;
 import java.time.LocalDate;
 import java.time.Month;
@@ -33,24 +35,37 @@ public class Proyectoprueba {
 //              System.out.println("Nombre:"+alumnoEncontradodni.getNombre());
 //          }
 
-        AlumnoData alu=new AlumnoData();
-        for (Alumno alumno: alu.listarAlumnos()){
-            System.out.println(alumno.getDni());
-            System.out.println(alumno.getApellido());
-            System.out.println(alumno.getNombre());
-           
-        }
-        
-        
-//    }
-//     
+//        AlumnoData alu=new AlumnoData();
+//        for (Alumno alumno: alu.listarAlumnos()){
+//            System.out.println(alumno.getDni());
+//            System.out.println(alumno.getApellido());
+//            System.out.println(alumno.getNombre());
+//           
+//        }
+//        
+//        
+////    }
+////     
+//
+//        MateriaData M = new MateriaData();
+//        
+//        for(Materias materia: M.listaMateria()){
+//            System.out.println(materia.getNombre());
+//            System.out.println(materia.getAnio());
+//            System.out.println(materia.isEstado());
+//        }
+//      }
 
-        MateriaData M = new MateriaData();
-        
-        for(Materias materia: M.listaMateria()){
-            System.out.println(materia.getNombre());
-            System.out.println(materia.getAnio());
-            System.out.println(materia.isEstado());
-        }
-      }
+      AlumnoData alu = new AlumnoData();
+      Alumno a= new Alumno();
+      Materias m=new Materias();
+      MateriaData Mtd = new MateriaData();
+      InscripcionData ins = new InscripcionData();
+      
+     Alumno a1=alu.buscarAlumno(9);
+     Materias mate= Mtd.buscarM(1);
+     inscripcion insc = new inscripcion(7, a1, mate);
+     ins.guardarInscripcion(insc);
     }
+}
+
