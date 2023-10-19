@@ -2,7 +2,9 @@
 package ProyectoTransversal;
 
 import Entidades.Alumno;
+import Entidades.Materias;
 import accesoDatos.AlumnoData;
+import accesoDatos.MateriaData;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -41,6 +43,14 @@ public class Proyectoprueba {
         
         
 //    }
-//    
+//     
+
+        MateriaData M = new MateriaData();
+        
+        for(Materias materia: M.listaMateria()){
+            System.out.println(materia.getNombre());
+            System.out.println(materia.getAnio());
+            System.out.println(materia.isEstado());
+        }
       }
     }

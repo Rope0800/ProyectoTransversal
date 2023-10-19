@@ -23,7 +23,7 @@ public class AlumnoData {
      String sql = "INSERT INTO alumno(dni, apellido, nombre, fechaNacimiento, estado)"
              + "VALUE(?,?,?,?,?)";
      
-     try {
+     try { 
         PreparedStatement ps  = con.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
         
         ps.setInt(1, alumno.getDni());
@@ -76,7 +76,7 @@ public class AlumnoData {
             int exito=ps.executeUpdate();
             if(exito==1){
                 JOptionPane.showMessageDialog(null, "ALUMNO ELIMINADO");
-            }
+            } 
             ps.close();
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "ERROR AL ACCEDER A LA TABLA ALUMNO");
