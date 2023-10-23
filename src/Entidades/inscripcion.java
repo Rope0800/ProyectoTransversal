@@ -2,11 +2,15 @@
 package Entidades;
 
 
-public class inscripcion {
+public class Inscripcion {
     private int idInscripto;
     private double nota;
     private Alumno Alumno;
     private Materias Materias;
+
+    public Inscripcion() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
     public int getIdInscripto() {
         return idInscripto;
@@ -40,13 +44,13 @@ public class inscripcion {
         this.Materias = Materias;
     }
 
-    public inscripcion(double nota, Alumno Alumno, Materias Materias) {
+    public Inscripcion(double nota, Alumno Alumno, Materias Materias) {
         this.nota = nota;
         this.Alumno = Alumno;
         this.Materias = Materias;
     }
 
-    public inscripcion(int idInscripto, double nota, Alumno Alumno, Materias Materias) {
+    public Inscripcion(int idInscripto, double nota, Alumno Alumno, Materias Materias) {
         this.idInscripto = idInscripto;
         this.nota = nota;
         this.Alumno = Alumno;

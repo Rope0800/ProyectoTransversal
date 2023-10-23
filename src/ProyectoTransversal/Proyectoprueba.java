@@ -64,7 +64,7 @@ public class Proyectoprueba {
       
      Alumno a1=alu.buscarAlumno(9);
      Materias mate= Mtd.buscarM(1);
-     inscripcion insc = new inscripcion(7, a1, mate);
+     Inscripcion insc = new Inscripcion(7, a1, mate);
      ins.guardarInscripcion(insc);
     }
 }
