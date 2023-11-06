@@ -95,22 +95,20 @@ public class MateriaData {
     }
     
     public Materias buscarM(int id){  
-        
+         Materias materia = null;
         String slq= "SELECT nombre, año, estado FROM materia WHERE idMateria = ? AND estado = 1";
-        Materias materia = null;
-        
+        PreparedStatement ps = null;
+      
         try {
-            PreparedStatement ps = con.prepareStatement(slq);
-            
+            ps = con.prepareStatement(slq);
             ps.setInt(1, id);
-            
             ResultSet rs = ps.executeQuery();
             
             if (rs.next()) {
                 materia = new Materias();
-                materia.setIdMateria(rs.getInt("IdMateria"));
+                materia.setIdMateria(id);
                 materia.setNombre(rs.getString("nombre"));
-                materia.setAnio(rs.getInt("Año"));
+                materia.setAnio(rs.getInt("año"));
                 materia.setEstado(true);
             } else{
                JOptionPane.showMessageDialog(null, "NO EXISTE ESTA MATERIA");

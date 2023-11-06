@@ -93,11 +93,11 @@ public class AlumnoData {
             rs = ps.executeQuery();
             if(rs.next()){
                 alumno=new Alumno();
-                alumno.setIdAlumno(rs.getInt("idAlumno"));
+                alumno.setIdAlumno(id);
                 alumno.setDni(rs.getInt("dni"));
                 alumno.setApellido(rs.getString("apellido"));
                 alumno.setNombre(rs.getString("nombre"));
-                alumno.setFechaNacimiento(rs.getDate("fechaNacimiento").toLocalDate());
+//                alumno.setFechaNacimiento(rs.getDate("fechaNacimiento").toLocalDate());
                 alumno.setEstado(true);
             }else{
                 JOptionPane.showMessageDialog(null, "NO EXISTE ESE ALUMNO");
